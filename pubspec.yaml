@@ -1,0 +1,64 @@
+name: taskmate_ui
+description: "TaskMate – Your smart productivity & collaboration companion."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+
+  # Networking & config
+  http: ^1.6.0
+  flutter_dotenv: ^6.0.1
+  web_socket_channel: ^3.0.3
+
+  # State management
+  provider: ^6.1.5+1
+
+  # Auth
+  google_sign_in: ^7.2.0
+
+  # Local storage / reminders
+  shared_preferences: ^2.5.6
+  flutter_local_notifications: ^22.3.1
+  timezone: ^0.11.1
+
+  # Media
+  image_picker: ^1.2.4
+  image: ^4.10.2
+
+  # UI & utilities
+  flutter_rating_bar: ^4.0.1
+  intl: ^0.20.3
+  uuid: ^4.6.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - .env
+    - assets/images/
+
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Regular.ttf
+        - asset: assets/fonts/Poppins-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Poppins-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Poppins-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Poppins-ExtraBold.ttf
+          weight: 800
